@@ -1,5 +1,3 @@
-Install this by UPM: https://github.com/nSavelev/UniRx-as-Package.git?path=Assets/UniRxPackage
-
 UniRx - Reactive Extensions for Unity
 ===
 Created by Yoshifumi Kawai(neuecc)

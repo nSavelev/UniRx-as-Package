@@ -12,10 +12,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4be03226-ab75-4bd3-57b8-ae89860c960e}</ProjectGuid>
+    <ProjectGuid>{1100e63d-b2ff-886a-dc6b-3679ba0d7ff6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>UnityTests</AssemblyName>
+    <AssemblyName>UniRxExt</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -50,41 +50,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\UnityTests\ChainingAssertion.Unity.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\AggregateTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\ContinueWithTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\ConversionTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\DisposableTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\DoTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\DurabilityTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\MicroCoroutineTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\Observable.ConcatTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\Observable.ConcurrencyTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\Observable.ErrorHandlingTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\Observable.Events.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\Observable.GeneratorTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\Observable.PagingTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\Observable.TimeTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\ObservableTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\QueueWorkerTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\RangeTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\ReactivePropertyTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\ReactriveDictionaryTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\SchedulerTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\SelectMany.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\SelectWhereOptimizeTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\SubjectTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\TakeTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\ToTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\Rx\WhenAllTest.cs" />
-     <Compile Include="Assets\Scripts\UnityTests\TestUtil.cs" />
-     <None Include="Assets\Scripts\UnityTests\UnityTests.asmdef" />
- <Reference Include="UnityEngine.TestRunner">
- <HintPath>G:/MyPackages/UniRx-as-Package/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.TestRunner">
- <HintPath>G:/MyPackages/UniRx-as-Package/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
- </Reference>
+     <Compile Include="Assets\UniRxPackage\Runtime\Extentions\ActionExt.cs" />
+     <Compile Include="Assets\UniRxPackage\Runtime\Extentions\DisposableList.cs" />
+     <Compile Include="Assets\UniRxPackage\Runtime\Extentions\ObservableSubscription.cs" />
+     <None Include="Assets\UniRxPackage\Runtime\Extentions\UniRxExt.asmdef" />
  <Reference Include="UnityEditor.UI">
  <HintPath>G:/MyPackages/UniRx-as-Package/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
@@ -274,8 +243,35 @@
  <Reference Include="UnityEditor">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.36f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
  </Reference>
- <Reference Include="nunit.framework">
- <HintPath>G:/MyPackages/UniRx-as-Package/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.36f1/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.36f1/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.36f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.36f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="AssetStoreTools">
+ <HintPath>G:/MyPackages/UniRx-as-Package/Assets/AssetStoreTools/Editor/AssetStoreTools.dll</HintPath>
+ </Reference>
+ <Reference Include="AssetStoreToolsExtra">
+ <HintPath>G:/MyPackages/UniRx-as-Package/Assets/AssetStoreTools/Editor/AssetStoreToolsExtra.dll</HintPath>
+ </Reference>
+ <Reference Include="log4netPlastic">
+ <HintPath>G:/MyPackages/UniRx-as-Package/Library/PackageCache/com.unity.collab-proxy@1.14.12/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Plastic.Antlr3.Runtime">
+ <HintPath>G:/MyPackages/UniRx-as-Package/Library/PackageCache/com.unity.collab-proxy@1.14.12/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Plastic.Newtonsoft.Json">
+ <HintPath>G:/MyPackages/UniRx-as-Package/Library/PackageCache/com.unity.collab-proxy@1.14.12/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="unityplastic">
+ <HintPath>G:/MyPackages/UniRx-as-Package/Library/PackageCache/com.unity.collab-proxy@1.14.12/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.36f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
